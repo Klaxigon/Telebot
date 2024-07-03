@@ -5,7 +5,7 @@ import time
 import threading
 from datetime import datetime
 
-API_TOKEN = '6923061426:AAF4SiJQ31Csx7e11Aa1ctYAKx0OusKKXaA'
+API_TOKEN = '//'
 
 bot = telebot.TeleBot(API_TOKEN)
 
