@@ -1,5 +1,5 @@
-import telebot # type: ignore
-from telebot import types # type: ignore
+import telebot
+from telebot import types
 import logging
 import time
 import threading
@@ -30,7 +30,7 @@ def handle_message(message):
     yes_button = types.InlineKeyboardButton("Ja", callback_data="yes")
     no_button = types.InlineKeyboardButton("Nein", callback_data="no")
     markup.add(yes_button, no_button)
-    sent_message = bot.reply_to(message, "Möchtest du auf eine Webseite weitergeleitet werden?", reply_markup=markup)
+    sent_message = bot.reply_to(message, "Möchtest du auf die Webseite weitergeleitet werden?", reply_markup=markup)
 
     threading.Thread(target=delete_message, args=(sent_message.chat.id, sent_message.message_id, 30)).start()
 
