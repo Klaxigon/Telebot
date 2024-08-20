@@ -44,7 +44,7 @@ def handle_callback(call):
 
 if __name__ == "__main__":
     try:
-        print("Bot läuft...")
+        print("Bot läuft")
         bot.polling(none_stop=True)
     except Exception as e:
         logging.error(e)
